@@ -7,7 +7,7 @@ header{
 
 body {
     color : white;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
 }
 
 p {
@@ -30,10 +30,9 @@ h3 {
     padding-top: 10px;
 }
 
-
 .presentation {
     padding-top: 20px;
-    background-color: rgb(15, 15, 15);
+    background-color: black;
     border-radius: 20px;
     margin-left: 20%;
     margin-right: 20%;
@@ -46,22 +45,31 @@ h3 {
 
 .container{
         display: grid;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 100px 150px 200px;
-        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 150px 150px;
+        gap: 5px;
 }
 
-.one{
-    background-color: white;
-    gap:100px;
+.one, .two, .three, .four{
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+    margin: 15px;
 }
 
-.two{
-    background-color: white;
-    gap:100px;
+.one {
+    grid-column: 1/4;
 }
 
-.three{
-    background-color: white;
-    gap:100px;
+.two {
+    grid-column: 1 / 2;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.three {
+    grid-column: 2/3;
+}
+
+.four {
+    grid-column: 3/4;
 }
