@@ -11,3 +11,9 @@ h1{
     padding-left: 10%;
     padding-top: 15%;
 }
+
+h1 div {
+    margin-bottom: 10%;
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
