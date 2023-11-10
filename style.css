@@ -1,39 +1,65 @@
+header{
+
+}
+
 body {
     background: black;
     font-family: 'Montserrat', sans-serif;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1200px 500px;
+    grid-template-rows: 400px 100px 300px;
+}
+
 .Accueil{
+    grid-column: 1 / 2;
+    width: 500px;
+    height : 300px;
     text-align: center;
     color: whitesmoke;
-    font-size: xx-large;
+    font-size: xxx-large;
     font-weight: 900;
-    margin-top: 55px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .descriptif{
+    grid-row: 2/3;
+    border-bottom: 1px solid rgb(124, 119, 119);
+    width: 500px;
+    height:50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
     text-align: center;
     color: rgb(124, 119, 119);
     font-weight: 300;
     font-size:large;
-    margin-bottom: 40px;
 }
 
 .PetitePresentation {
+    grid-row:  3/4;
+    grid-column: 1/2;
     text-align: left;
+    width: 500px;
     font-weight: 300;
     font-size: large;
     background-color: rgb(15, 15, 15);
-    box-shadow: 0 -550px 300px blue;
     border: 1px solid black;
     color: whitesmoke;
     border-radius: 15px;
-    margin-right: 350px;
-    margin-left: 350px;
-    padding:10px;
-    padding-right: 15%;
-    padding-left: 15%;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top:10px;
+    padding-right: 5%;
+    padding-left: 5%;
     font-weight: 300;
     font-size: large;
 }
