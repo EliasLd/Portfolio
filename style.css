@@ -2,7 +2,6 @@ body {
     background: black;
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    justify-content: center; 
     align-items: center; 
     height: 100vh; 
     margin: 0;
@@ -12,6 +11,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 100px 300px;
+    justify-content: center;
     max-width: 1200px;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 /* Styles pour les écrans mobiles */
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1200px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 400px auto 100px auto;
@@ -94,3 +94,48 @@ body {
         padding-left: 5%;
     }
 }
+
+
+@media screen and (max-width: 580px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100px auto 100px auto;
+    }
+
+    .Accueil, .descriptif, .PetitePresentation {
+        grid-column: 1;
+        width: 90%; 
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .Accueil{
+        height: auto;
+        margin-top: 90%;
+    }
+
+    .descriptif{
+        margin-left: 10px;
+    }
+
+    .PetitePresentation {
+        height: auto;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10%;  
+        text-align: left;
+    }
+
+    .projets {
+        grid-column: 1;
+        grid-row: 4;
+        background-color: rgb(15, 15, 15);
+        border-radius: 15px;
+        height: auto; 
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+
