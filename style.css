@@ -73,11 +73,24 @@ body {
     height: 760px;
 }
 
-@media screen and (max-width: 450px){
-    .PetitePresentation{
-        margin-right:20px;
-        margin-left: 20px;
-        padding-right: 20px;
-        padding-left: 20px;
+/* Styles pour les écrans mobiles */
+@media screen and (max-width: 1420px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px auto 100px auto;
+    }
+
+    .projets {
+        grid-column: 1;
+        grid-row: 4;
+        background-color: rgb(15, 15, 15);
+        border-radius: 15px;
+        height: 100%;
+        margin-top: 30%;
+        margin-left: 120px;
+        margin-right: 50px;
+        padding-top:10px;
+        padding-right: 5%;
+        padding-left: 5%;
     }
 }
