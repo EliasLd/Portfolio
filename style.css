@@ -1,68 +1,49 @@
 body {
     background: black;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: center; 
-    height: 100vh; 
-    margin: 0;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 100px 300px;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 300px 50px 250px;
+    grid-gap: 30px;
     justify-content: center;
-    max-width: 1200px;
+    margin-top: 5%;
 }
-
+    
 .Accueil{
     grid-column: 1 / 2;
-    width: 500px;
-    height : 300px;
     text-align: center;
     color: whitesmoke;
     font-size: xxx-large;
     font-weight: 900;
-    margin-top: 35px;
-    margin-left: 120px;
-    margin-right: 120px;
-    padding-top: 10px;
-    padding-right: 5%;
-    padding-left: 5%;
 }
 
 .descriptif{
     grid-row: 2/3;
     border-bottom: 1px solid rgb(124, 119, 119);
-    width: 500px;
-    height:50px;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 20px;
-    padding-right: 5%;
-    padding-left: 5%;
     text-align: center;
+    display: inline-block;
     color: rgb(124, 119, 119);
     font-weight: 300;
-    font-size:large;
+    font-size: large;
 }
 
 .PetitePresentation {
+    
     grid-row:  3/4;
     grid-column: 1/2;
     text-align: left;
-    width: 500px;
-    height: 250px;
     font-weight: 300;
-    font-size: large;
+    font-size: medium;
     background-color: rgb(15, 15, 15);
     color: whitesmoke;
     border-radius: 15px;
-    margin-left: 120px;
-    margin-right: 120px;
-    padding-top:10px;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .projets{
@@ -70,72 +51,21 @@ body {
     grid-row: 1/4;
     background-color: rgb(15, 15, 15);
     border-radius: 15px;
-    height: 760px;
 }
 
-/* Styles pour les écrans mobiles */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1264px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 400px auto 100px auto;
+        grid-template-rows: 400px 100px auto 400px;
+        justify-content: center;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
     .projets {
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 4/5;
         background-color: rgb(15, 15, 15);
-        border-radius: 15px;
-        height: 100%;
-        margin-top: 30%;
-        margin-left: 120px;
-        margin-right: 50px;
-        padding-top:10px;
-        padding-right: 5%;
-        padding-left: 5%;
+        border-radius: 15px;    
     }
 }
-
-
-@media screen and (max-width: 580px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 100px auto 100px auto;
-    }
-
-    .Accueil, .descriptif, .PetitePresentation {
-        grid-column: 1;
-        width: 90%; 
-        text-align: center;
-        padding: 10px;
-        margin: 0;
-    }
-
-    .Accueil{
-        height: auto;
-        margin-top: 90%;
-    }
-
-    .descriptif{
-        margin-left: 10px;
-    }
-
-    .PetitePresentation {
-        height: auto;
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10%;  
-        text-align: left;
-    }
-
-    .projets {
-        grid-column: 1;
-        grid-row: 4;
-        background-color: rgb(15, 15, 15);
-        border-radius: 15px;
-        height: auto; 
-        margin-top: 20px;
-        padding: 10px;
-    }
-}
-
-
