@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.container {
+.container-externe{
     display: grid;
     grid-template-columns: 600px 600px;
     grid-template-rows: 300px 50px 250px;
@@ -46,15 +46,32 @@ body {
     padding-bottom: 40px;
 }
 
-.projets{
+.compétences{
     grid-column: 2/3;
     grid-row: 1/4;
     background-color: rgb(15, 15, 15);
     border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.mes-compétences{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px;
+    padding:5%;
+}
+
+.compétences-informatique{
+    grid-column: 1;
+    grid-row: 1/2;
+    border-radius:15px;
+    background-color: rgb(37, 37, 37);
 }
 
 @media screen and (max-width: 1264px) {
-    .container {
+    .container-externe {
         grid-template-columns: 1fr;
         grid-template-rows: 400px 100px auto 400px;
         justify-content: center;
@@ -62,7 +79,7 @@ body {
         margin-left: 15px;
     }
 
-    .projets {
+    .compétences {
         grid-column: 1;
         grid-row: 4/5;
         background-color: rgb(15, 15, 15);
