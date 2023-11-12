@@ -22,10 +22,14 @@ body {
 
 .descriptif{
     grid-row: 2/3;
-    border-bottom: 1px solid rgb(124, 119, 119);
     text-align: center;
+}
+
+.descriptif h2 {
     display: inline-block;
+    border-bottom: 1px solid rgb(124, 119, 119);
     color: rgb(124, 119, 119);
+    padding-bottom: 20px;
     font-weight: 300;
     font-size: large;
 }
@@ -59,15 +63,24 @@ body {
 .mes-compétences{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 50px 100px 100px;
     padding:5%;
 }
 
 .compétences-informatique{
     grid-column: 1;
     grid-row: 1/2;
-    border-radius:15px;
-    background-color: rgb(37, 37, 37);
+    text-align: center;
+}
+
+.compétences-informatique h2{
+    border-bottom: 1px solid rgb(124, 119, 119);
+    display: inline;
+    text-align: left;
+    color: rgb(124, 119, 119);
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: large;
 }
 
 @media screen and (max-width: 1264px) {
