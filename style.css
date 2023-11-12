@@ -63,7 +63,7 @@ body {
 .mes-compétences{
     display: grid;
     grid-template-columns: 100px 1fr;
-    grid-template-rows: 50px 50px 100px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 100px;
     padding:5%;
 }
 
@@ -83,13 +83,7 @@ body {
     font-size: large;
 }
 
-.Langage-C{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    text-align: center;
-}
-
-.Langage-C p{
+.Langage-C p, .Langage-C-plpl p, .Langage-C-sharp p, .Python p, .HTML p, .CSS p{
     background-color: rgb(37, 37, 37);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -97,6 +91,39 @@ body {
     border-radius: 15px;
     color: rgb(124, 119, 119);
     
+}
+
+.Langage-C, .Langage-C-plpl, .Langage-C-sharp, .Python, .HTML, .CSS{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.Langage-C p:hover, .Langage-C-plpl p:hover, .Langage-C-sharp p:hover, .Python p:hover, .HTML p:hover, .CSS p:hover{
+    background-color: rgb(49, 49, 49);
+}
+
+.Langage-C{
+    grid-row: 2/3;
+}
+
+.Langage-C-plpl{
+    grid-row: 3/4;
+}
+
+.Langage-C-sharp{
+    grid-row: 4/5;
+}
+
+.Python{
+    grid-row: 5/6;
+}
+
+.HTML{
+    grid-row: 6/7;
+}
+
+.CSS{
+    grid-row: 7/8;
 }
 
 @media screen and (max-width: 1264px) {
