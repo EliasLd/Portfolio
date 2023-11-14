@@ -133,7 +133,6 @@ body {
 .description-langages{
     grid-column: 2/3;
     grid-row: 2/8;
-    height: 300px;
     background-color: rgb(37, 37, 37);
     margin-top: 20px;
     margin-left: 25px;
