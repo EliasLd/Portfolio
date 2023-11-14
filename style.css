@@ -172,6 +172,7 @@ body {
     padding-right: 40px;
     padding-top: 5px;
     text-align: left;
+    font-size: medium;
 }
 
 .Mes-projets{
@@ -232,7 +233,7 @@ body {
 }
 
 .DUINOSHOOT-description{
-    color: white;
+    color: whitesmoke;
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgb(45, 45, 45);
@@ -351,6 +352,7 @@ body {
         margin-top: 40px;
         padding-right: 10px;
         padding-bottom: 10px;
+        font-size: x-small;
     }
 
     .Mes-projets {
@@ -387,6 +389,7 @@ body {
     .DUINOSHOOT-description{
         grid-column: 1;
         grid-row: 3/4;
+        font-size: small;
     }
 
     .Lien-Github-D{
