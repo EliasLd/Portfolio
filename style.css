@@ -351,6 +351,10 @@ body {
 
 }
 
+
+
+
+
 div#MessageCopie {
     position: absolute;
     background-color: rgb(45, 45, 45);
@@ -489,9 +493,9 @@ div#MessageCopie {
         grid-row: 4/5;
         margin:0;
         transition-property: transform;
-    transition-duration: 400ms;
-    &:hover {
-        transform: scale(1.05);
+        transition-duration: 400ms;
+        &:hover {
+            transform: scale(1.05);
     }
     }
 
@@ -508,7 +512,7 @@ div#MessageCopie {
         transition-duration: 400ms;
         &:hover {
             transform: scale(0.95);
-
+        }
     }
 
     .adresse-mail, .LinkedIn, .Github{
@@ -586,3 +590,8 @@ div#MessageCopie {
       text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgb(25, 25, 25);
     }
   }
+  
+  
+  
+  
+  
