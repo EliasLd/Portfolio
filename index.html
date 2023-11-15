@@ -110,6 +110,9 @@
                <div class="Contacts">
                     <p>Contacts</p>
                </div>
+               <p id="MessageCopie">
+                Copié !
+                </p>
                <div class="nav-liens">
                <section class="grille-liens">
                     <div onclick="CopierText()" class="adresse-mail">
@@ -126,34 +129,34 @@
                </section>
                </div>
             </section>
-            <div id="MessageCopie">Copié ! </div>
         </footer>
     </main>
     <script>
-        // Créez l'élément pour le message "Texte copié" une seule fois au chargement de la page
-    var MessageCopie = document.createElement("div");
+
+    var piedDePage = document.querySelector(".pied-de-page");
+    var MessageCopie = document.createElement("p");
     MessageCopie.id = "MessageCopie";
-    document.body.appendChild(MessageCopie);
+    piedDePage.appendChild(MessageCopie);
+
+    MessageCopie.textContent = "Copié !";
 
     function CopierText() {
-        var TextACopier = document.getElementById("TextACopier");
-        var tmp = document.createElement("input");
-        tmp.value = TextACopier.innerText;
-        document.body.appendChild(tmp);
-        tmp.select();
-        tmp.setSelectionRange(0, 99999);
+    var TextACopier = document.getElementById("TextACopier");
+    var tmp = document.createElement("input");
+    tmp.value = TextACopier.innerText;
+    document.body.appendChild(tmp);
+    tmp.select();
+    tmp.setSelectionRange(0, 99999);
 
-        document.execCommand("copy");
-        document.body.removeChild(tmp);
+    document.execCommand("copy");
+    document.body.removeChild(tmp);
 
-        MessageCopie.innerText = "Copié";
+    MessageCopie.style.opacity = 1;
 
-        MessageCopie.style.opacity = 1;
-
-        setTimeout(function() {
-            MessageCopie.style.opacity = 0;
-        }, 1000);
-    }
+    setTimeout(function() {
+        MessageCopie.style.opacity = 0;
+    }, 1000);
+   }
     </script>
 </body>
 </html>
