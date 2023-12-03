@@ -326,6 +326,7 @@ p#MessageCopie {
     padding-left: 20px;
     font-weight: 600;
     font-size: large;
+    cursor : pointer;
 
     transition-property: transform;
     transition-duration: 400ms;
@@ -333,10 +334,6 @@ p#MessageCopie {
         transform: scale(1.15);
     }
 
-}
-
-.adresse-mail:hover{
-    opacity: 0.8;
 }
 
 .LinkedIn{
