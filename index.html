@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1000;1,300&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,000;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
     <title>Elias El ABD</title>
 </head>
 <body>
@@ -111,16 +112,11 @@
                <div class="Contacts">
                     <p>Contacts</p>
                </div>
-               <p id="MessageCopie">
-                Copié !
-                </p>
                <div class="nav-liens">
                <section class="grille-liens">
-                    <div onclick="CopierText()" class="adresse-mail">
-                        <p id="TextACopier"> 
-                             elabd.elias@gmail.com
-                        </p>
-                    </div>
+                    <button id="TextACopier" class="adresse-mail"> 
+                        elabd.elias@gmail.com
+                    </button>
                     <a class="LinkedIn" href="https://www.linkedin.com/in/elias-el-abd-5a1857292/">
                         LinkedIn
                     </a>
@@ -132,32 +128,5 @@
             </section>
         </footer>
     </main>
-    <script>
-
-    var piedDePage = document.querySelector(".pied-de-page");
-    var MessageCopie = document.createElement("p");
-    MessageCopie.id = "MessageCopie";
-    piedDePage.appendChild(MessageCopie);
-
-    MessageCopie.textContent = "Copié !";
-
-    function CopierText() {
-    var TextACopier = document.getElementById("TextACopier");
-    var tmp = document.createElement("input");
-    tmp.value = TextACopier.innerText;
-    document.body.appendChild(tmp);
-    tmp.select();
-    tmp.setSelectionRange(0, 99999);
-
-    document.execCommand("copy");
-    document.body.removeChild(tmp);
-
-    MessageCopie.style.opacity = 1;
-
-    setTimeout(function() {
-        MessageCopie.style.opacity = 0;
-    }, 1000);
-   }
-    </script>
 </body>
 </html>
