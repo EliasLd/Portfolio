@@ -1,3 +1,6 @@
+// -------------- Copie du texte -------------- //
+
+
 function CopierText() {
 var TextACopier = document.getElementById("TextACopier");
 var tmp = document.createElement("input");
@@ -28,3 +31,27 @@ function Copie(){
     })
 }
 
+// ---------------------------------------- //
+
+const ratio = .4       //ratio de l'affichage
+const options = {
+    root:null,
+    rootMargin : '0px',
+    threshold : ratio     //détection à 10% de l'affichage
+}
+
+const intersection = function (entrées, observer) {
+    entrées.forEach(function (entry) {
+        if(entry.intersectionRatio > ratio){      //l'élément visible
+            entry.target.classList.add("reveal-visible")
+        }
+        else{
+            entry.target.classList.remove("reveal-visible")
+        }
+    })
+}
+
+const observer = new IntersectionObserver(intersection, options)
+document.querySelectorAll(".reveal").forEach(function (t){
+    observer.observe(t)
+})
