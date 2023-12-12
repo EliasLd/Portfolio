@@ -33,7 +33,7 @@ function Copie(){
 
 // ---------------------------------------- //
 
-const ratio = .4       //ratio de l'affichage
+const ratio = .2       //ratio de l'affichage
 const options = {
     root:null,
     rootMargin : '0px',
