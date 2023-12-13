@@ -385,14 +385,13 @@ body {
     
 }
 
-
 @media screen and (max-width: 1264px) {
     .container-externe {
         grid-template-columns: 1fr;
         grid-template-rows: 400px 100px auto auto auto auto;
         justify-content: center;
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-right: 25%;
+        margin-left: 25%;
     }
 
     .compétences {
@@ -405,11 +404,11 @@ body {
     .mes-compétences{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 60px 60px auto auto auto;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         padding:0px;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 50px;
+        padding-bottom: 50px;
 
     }
 
@@ -557,6 +556,14 @@ body {
     }
 
 }
+
+@media  screen and (max-width: 764px) {
+    .container-externe{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
 
 /* ANIMATIONS */ 
 
