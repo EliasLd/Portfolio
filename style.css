@@ -86,7 +86,7 @@ body {
     font-size: large;
 }
 
-.Langage-C p, .Langage-C-plpl p, .Langage-C-sharp p, .Python p, .HTML p, .CSS p, .Linux p, .JS p{
+.Langage-C p, .Langage-C-plpl p, .Langage-C-sharp p, .Python p, .HTML p, .CSS p, .Linux p, .JS p, .Git p{
     background-color: rgb(37, 37, 37);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -95,14 +95,18 @@ body {
     color: rgb(124, 119, 119);
 }
 
-.Langage-C, .Langage-C-plpl, .Langage-C-sharp, .Python, .HTML, .CSS, .JS, .Linux{
+.Langage-C, .Langage-C-plpl, .Langage-C-sharp, .Python, .HTML, .CSS, .JS, .Linux, .Git{
     grid-column: 1/2;
     text-align: center;
     font-weight: 600;
 }
 
-.Langage-C p:hover, .Langage-C-plpl p:hover, .Langage-C-sharp p:hover, .Python p:hover, .HTML p:hover, .CSS p:hover, .Linux p:hover, .JS p:hover{
+.Langage-C p:hover, .Langage-C-plpl p:hover, .Langage-C-sharp p:hover, .Python p:hover, .HTML p:hover, .CSS p:hover, .Linux p:hover, .JS p:hover, .Git p:hover{
     background-color: rgb(49, 49, 49);
+}
+
+.Git{
+    grid-row: 1/2;
 }
 
 .Langage-C{
@@ -460,11 +464,16 @@ body {
         grid-row: 4/5;
     }
 
-   
     .Linux{
         grid-column: 2/3;
         grid-row: 4/5;
     }
+
+    .Git{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+
     .description-langages{
         grid-column: 1/4;
         grid-row: auto;
