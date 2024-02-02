@@ -12,6 +12,23 @@ body {
     color: #fff;
 }
 
+.Accueil.light {
+    color : #d1170a!important;
+}
+
+.Accueil.dark  {
+    color: rgb(170, 170, 253);
+}
+
+.light .important-info{
+    color : black!important;
+    font-weight: 600;
+}
+
+.dark .important-info{
+    color: rgb(170, 170, 253);
+}
+
 .btn-toggle {
     position:absolute;
     top:15px;
@@ -32,7 +49,7 @@ body.dark {
 
 body.light {
     color : black;
-    background: #fff;
+    background: #F9F8FE;
 }
 
 .light, .dark{
@@ -41,7 +58,7 @@ body.light {
 
 .light .PetitePresentation, .light .compétences, .light .NV-PROJET, .light .grille-liens , .light .nav-liens{
     color: black;
-    background: rgb(230, 230, 230);
+    background: #EEEEEE;
     transition: .4s ease-in-out;
 }
 
@@ -70,13 +87,13 @@ body.light {
 .light .adresse-mail,
 .light .LinkedIn, 
 .light .Github {
-    background: rgb(218, 218, 218)!important;
+    background: #E6E4E5!important;
 }
 
 .light .adresse-mail,
 .light .LinkedIn, 
 .light .Github{
-    background: rgb(218, 218, 218);
+    background: #E6E4E5;
     color: black;
 }
 
@@ -86,6 +103,10 @@ body.light {
 
 .dark .NV-PROJET-texte{
     color: #fff;
+}
+
+.light .NV-PROJET-texte{
+    color: black;
 }
 
 .dark .Langage-C p,
@@ -101,6 +122,8 @@ body.light {
 .dark .description-électronique, 
 .dark .Projet-Description{
     background: rgb(37, 37, 37);
+    border:10px;
+    border-color: #E5E3E4;
 }
 
 .dark .adresse-mail,
@@ -108,6 +131,12 @@ body.light {
 .dark .Github{
     background: rgb(37, 37, 37);
     color: #fff;
+}
+
+.light .adresse-mail,
+.light .LinkedIn, 
+.light .Github{
+    color: black;
 }
 
 .container-externe{
@@ -254,9 +283,9 @@ body.light {
     margin-top: 20px;
     margin-left: 25px;
     padding-bottom: 10px;
-    border: 1px;
+    border: 10px;
     border-radius: 15px;
-    color: rgb(124, 119, 119);
+    
 }
 
 .compétences-électronique{
@@ -711,7 +740,7 @@ body.light {
  * ----------------------------------------
  */
 
-  .Accueil   {
+ .Accueil   {
 	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
@@ -752,6 +781,6 @@ body.light {
       text-shadow: none;
     }
     100% {
-      /*text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 1px;*/
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0px 0px 0px;
     }
   }
