@@ -42,7 +42,7 @@ body.light {
 .light .PetitePresentation, .light .compétences, .light .NV-PROJET, .light .grille-liens , .light .nav-liens{
     color: black;
     background: rgb(230, 230, 230);
-    transition: .4s ease-in-out
+    transition: .4s ease-in-out;
 }
 
 .dark .PetitePresentation, .dark .compétences, .dark .NV-PROJET, .dark .nav-liens{
@@ -752,6 +752,6 @@ body.light {
       text-shadow: none;
     }
     100% {
-      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 100000000px;
+      /*text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 1px;*/
     }
   }
