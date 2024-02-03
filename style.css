@@ -3,13 +3,22 @@ body {
 }
 
 .light-btn {
-    background: #fff;
-    color: #333;
+    background: transparent;
+    background-image: url('images/sun.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    transition: .4s ease-in-out;
 }
 
 .dark-btn {
-    background: #333;
-    color: #fff;
+    background: transparent;
+    background-image: url('images/moon.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode:darken;
+    transition: .4s ease-in-out;
+    
 }
 
 .Accueil.light {
@@ -33,13 +42,17 @@ body {
     position:absolute;
     top:15px;
     right: 15px;
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content:center;
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.btn-toggle img {
+    filter: invert(1);
 }
 
 body.dark {

@@ -6,8 +6,8 @@ btn.addEventListener('click', () => {
     if(body.classList.contains('dark')){
         body.classList.add('light')
         body.classList.remove('dark')
-        btn.classList.remove('light-btn')
         btn.classList.add('dark-btn')
+        btn.classList.remove('light-btn')
     }
     else if(body.classList.contains('light')){
         body.classList.add('dark')
